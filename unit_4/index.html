@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Colori Veneziani</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="content">
+		<div id="box1" class="logo">
+			<img src="images/colori_veneziani_argento.png"/>
+		</div>
+		<div id="box2">
+			<ul class="menu">
+				<li ><a  href="#box3">Home</a></li>
+				<li ><a href="#box4">Chi siamo</a></li>
+				<li ><a href="#box5">Info</a></li>
+			</ul>
+		</div>
+		<div id="show" class="menu_mobile"></div>
+		<table style="display:none;" class="menu2">
+			<tr><td><a id="hide" href="#box3">Home</a></td></tr>
+			<tr><td><a id="hide2" href="#box4">Chi siamo</a></td></tr>
+			<tr><td><a id="hide3" href="#box5">Info</a></td></tr>
+		</table>
+		<ul  style="list-style:none; display:none" class="menu2">
+			<li style="padding-top:10px;"><a id="hide" href="#box3">Home</a></li>
+			<li style="padding-top:10px; padding-bottom:10px;"><a id="hide2" href="#box4">Chi siamo</a></li>
+			<li style="padding-bottom:10px;"><a style="text-align:center;"id="hide3" href="#box5">Info</a></li>
+		</ul>
+	
+		<div id="box3">
+			<div class="sfondo">
+				<img src="images/visuale.png"/>
+			</div>
+			<div class="citazione">
+				<blockquote>&ldquo;<strong>Colori Veneziani:</strong> quando il colore diventa <strong>Materia</strong>.&rdquo;
+          			<!--<footer><cite>Mieczyslaw Kozlowski</cite></footer>-->
+        		</blockquote>
+			</div>
+		</div>
+		<div id="box4">
+		
+			<div class="banda_left">
+				<p>CHI SIAMO</p>
+				<img src="https://www.coloriveneziani.com/colori/wp-content/uploads/2016/09/orecchini_maddalena.jpg"/>
+			</div>
+			<div class="diagonale"></div>
+			<div class="banda_right">	
+				<p>Colori Veneziani ti permetter&agrave; di indossare <br>la bellezza e l&rsquo;eleganza<br>del migliore artigianato veneziano!</p>
+			</div>
+		</div>
+		<div id="box5" class="online">
+			<p class="promessa">Siamo finalmente on line</p>
+			<p class="promo">&#42;All'iscrizione riceverai un buono sconto del 10% sul primo ordine!</p>
+			<p class="seguici">Seguici su</p>
+			<p class="social"><a href="https://www.facebook.com/ColoriVeneziani" target="_balnk">Facebook</a> e <a href="https://www.instagram.com/coloriveneziani" target="_balnk">Instagram</a></p>
+		</div>
+		<div id="box6">
+			<img class="logo_footer" src="images/colori_veneziani_argento.png"/>
+			<!--<p class="condizioni">&#42;La promozione inizier&agrave; quando il sito verr&agrave; messo on-line</p>-->
+			<table class="tab_social">
+				<tr>
+					<td><p>Seguici su:</p></td>
+				</tr>
+				<tr>
+					<td class="facebook">
+						<a href="https://www.facebook.com/ColoriVeneziani" target="_balnk"><img src="images/facebook.png"/></a>
+					</td>
+					<td class="instagram">
+						<a href="https://www.instagram.com/coloriveneziani" target="_balnk"><img src="images/instagram.png"/></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>-->
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<!--<script src="cookie.js" type="text/javascript"></script>-->
+		<!--<script src="cookie.js" type="text/javascript"></script>-->
+        <script>
+    		$('a[href*=#]').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  					var $target = $(this.hash);
+  					$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+  						if ($target.length) {
+  							var targetOffset = $target.offset().top;
+  							$('html,body').animate({scrollTop: targetOffset}, 1000);
+  						return false;}
+  				}
+ 			});
+
+ 			/* torna in alto */
+ 			$(document).ready(function(){
+    			$("#back_to_top").hide();
+    			$(window).scroll(function(){
+        			$("#back_to_top").fadeIn(500);
+        			if ($("body").scrollTop() == 0){
+            			$("#back_to_top").fadeOut(500);
+        			}
+    			});
+    			$("#back_to_top").click(function(){
+        			$("html,body").animate({scrollTop: 0}, 500, function(){});
+    			});
+			});
+ 			/*menu mobile*/
+			$(document).ready(function(){
+    			$("#show").click(function(){
+        			$(".menu2").toggle();
+    			});
+			});
+			$(document).ready(function(){
+    			$("#hide, #hide2, #hide3, #box1, #box2, #box3, #box4, #box5, #box6").click(function(){
+        			$(".menu2").hide();
+    			});
+			});
+    	</script>
+</body>
+</html>

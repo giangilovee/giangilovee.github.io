@@ -1,0 +1,428 @@
+/*	stile desktop	*/
+@font-face {
+	font-family: 'CopperplateSB-Light';
+	src: url('https://www.coloriveneziani.com/fonts/CopperplateSB-Light/webfonts/3234E8_0_0.ttf');
+}
+
+h1, h2, h3, h4, h5, p{
+	font-family: CopperplateSB-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	padding:0;
+	margin:0;
+}
+.logo{
+	position:fixed;
+	width: 100%;
+	height:140px;
+	text-align: center;
+	background-color: #c80815;
+	z-index:300;
+	padding-top: 20px;
+}
+.menu{
+	position:fixed;
+	width: 100%;
+	height:50px;
+	top:144px;
+	z-index:200;
+	background-color: #c80815;
+	box-shadow: 0 0 10px rgba(0,0,0,0.63);
+}
+.menu li{
+	padding-top: 16px;
+	list-style: none;
+	float:left;
+	text-decoration:none;
+	color:white;
+	margin-right:20px;
+}
+.menu a{
+	text-decoration:none;
+	color:white;
+}
+#box3{
+	position: relative;
+    height: 780px;
+    z-index: 5;
+    display: block;
+    background-color: white;
+}
+.sfondo{
+	position: absolute;
+    left: 50%;
+    margin-left: -199.5px;
+    height: auto;
+    padding-top: 220px;
+}
+.sfondo img{
+	width:auto;
+	height:525px;
+}
+.citazione{
+	position: absolute;
+	text-align: center;
+	font-size: 1.2em;
+	top: 500px;
+	margin-left: -10px;
+	width: 550px;
+    height: 100px;
+    font-family: CopperplateSB-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+#box4{ 
+	margin-top: 140px;
+    width: 100%;
+    position: absolute;
+    height: 755px;
+    overflow-y: hidden;
+    top: 430px;
+	
+}
+.banda_left{
+	top: 210px;
+    position: relative;
+    width: 50%;
+    height: 755px;
+    float: left;
+}
+.banda_left p{
+	text-align:center;
+	font-size: 28px;
+}
+.banda_left img{
+	width:200px; 
+	height:200px; 
+	position:absolute; 
+	left:50%; 
+	margin-top:10px; 
+	margin-left:-100px; 
+	border-style:solid; 
+	border-width:1px; 
+	border-color: #c80815;
+}
+.diagonale{
+	top: 210px;
+    transform: skewX(-10deg);
+    background: #c80815;
+    width: 115px;
+    height: 755px;
+    display: block;
+    position: relative;
+    left: 46%;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.63);
+}
+
+.banda_right{
+    position: relative;
+    top: -545px;
+    right: 0;
+    width: 49%;
+    height: 755px;
+    float: right;
+    background: #c80815;
+    z-index: 3;
+}
+.banda_right p{
+	padding:175px 10px 10px 10px;
+	font-size:28px;
+	text-align:center;
+	color:#efefef;
+}
+#box5{
+	margin-top: 350px;
+    width: 100%;
+    position: relative;
+    height: 550px;
+    overflow-y: hidden;
+    top: 210px;
+}
+.online{
+	text-align:center;
+	color:black;
+}
+.promessa{
+	padding:0px 10px 0px 10px;
+	font-size:58px;
+}
+.promo{
+	padding:0px 10px 0px 10px;
+	font-size:28px;
+	text-align:center;
+	color:black;
+}
+.seguici{
+	padding:0px 10px 0px 10px;
+	font-size:28px;
+	text-align:center;
+	color:black;
+}
+.social{
+	padding:0px 10px 0px 10px;
+	font-size:28px;
+	text-align:center;
+	color:black;
+}
+.social a{
+	text-decoration: none;
+	color:black;
+}
+#box6{
+	width: 100%;
+	height: 150px;
+	background-color: #333;
+	position: relative;
+    overflow-y: hidden;
+    top: 100px;
+}
+.tab_social{
+	margin-top: 30px;
+	margin-right: 10px;
+	float: right;
+	color: white;
+}
+.logo_footer{
+	margin:20px 0px 10px 20px;
+}
+.condizioni{
+	top:90px;
+	left:50%;
+	margin-left: -211.11px;
+	position: absolute;
+	padding:0px 10px 0px 10px;
+	text-align:center;
+	font-size:17px;
+	color: white;
+}
+.facebook img{
+	width:50px;
+	height:50px;
+}
+.instagram img{
+	width:50px;
+	height:50px;
+
+}
+/* dispositivi mobili*/
+@media (max-width: 850px){
+	.logo{
+		position:fixed;
+		width: 100%;
+		height:160px;
+		text-align: center;
+		background-color: #c80815;
+		z-index:300;
+		box-shadow: 0 0 10px rgba(0,0,0,0.63);
+	    padding-top: 20px;
+	}
+	.logo img{
+		width: auto;
+		height: 130px;
+	}
+	#box2{
+		display: none;
+	}
+	.menu_mobile{
+		position: fixed;
+    	bottom: 15px;
+    	right: 30px;
+    	cursor: pointer;
+    	z-index: 1000;
+		display: block;
+		margin-left: 15%;
+    	margin-top: 8px;
+    	font-size: 3em;
+    	width:50px;
+		height:50px;
+		border-radius:50%;
+		background:#c80815;
+		box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.16), 0px 4px 8px 0px rgba(0,0,0,0.24);
+    	background-image: url(https://www.gstatic.com/images/icons/material/system/2x/list_white_24dp.png);
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: 30px;
+	}
+	.menu2{
+		position: fixed;
+    	bottom: 10px;
+    	border-radius: 12px;
+    	right: 11px;
+	    z-index: 1001;
+	    width: 100px;
+	    height: 100px;
+	    background: #c80815;
+	    text-align: center;
+	    box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.16), 0px 4px 8px 0px rgba(0,0,0,0.24);
+	}
+	.menu2 a{
+		text-decoration:none;
+		color:white;
+	}
+	#box3{
+		position: relative;
+    	height: 780px;
+    	z-index: 5;
+    	display: block;
+    	background-color: white;
+	}
+	.sfondo{
+		position: absolute;
+	    left: 50%;
+	    margin-left: -161.5px;
+	    height: auto;
+	    padding-top: 220px;
+	}
+	.sfondo img{
+		width:auto;
+		height:425px;
+	}
+	.citazione{
+		position: absolute;
+	    text-align: center;
+	    font-size: 1.2em;
+	    top: 84%;
+	    width: 100%;
+	    height: 100px;
+	    font-family: CopperplateSB-Light;
+		font-weight: normal;
+		font-style: normal;
+	}
+	#box4{ 
+		margin-top: 140px;
+	    width: 100%;
+	    position: absolute;
+	    height: 1070px;
+	    overflow-y: hidden;
+	    top: 430px;
+	}
+	.banda_left{
+		top: 180px;
+	    position: relative;
+	    width: 100%;
+	    height: 50%;
+	    float: left;
+	}
+	.banda_left p{
+		text-align:center;
+		font-size: 28px;
+	}
+	.banda_left img{
+		width:200px; 
+		height:200px; 
+		position:absolute; 
+		left:50%; 
+		margin-top:10px; 
+		margin-left:-100px; 
+		border-style:solid; 
+		border-width:1px; 
+		border-color: #c80815;
+	}
+	.diagonale{
+	    top: 670px;
+	    transform: skewY(-5deg);
+	    background: #c80815;
+	    width: 100%;
+	    height: 120px;
+	    display: block;
+	    position: relative;
+	    left: 0%;
+	    z-index: 2;
+	    box-shadow: 0 0 10px rgba(0,0,0,0.63);
+	}
+
+	.banda_right{
+	    position: relative;
+	    top: 154px;
+	    right: 0;
+	    width: 100%;
+	    height: 50%;
+	    float: right;
+	    background: #c80815;
+	    z-index: 3;
+	}
+	.banda_right p{
+		padding: 75px 10px 10px 10px;
+	    font-size: 28px;
+	    text-align: center;
+	    color: #efefef;
+	}
+	#box5{
+		margin-top: 350px;
+	    width: 100%;
+	    position: relative;
+	    height: 1044px;
+	    overflow-y: hidden;
+	    top: 330px;
+	}
+	.online{
+		text-align:center;
+		color:black;
+	}
+	.promessa{
+		padding: 188px 10px 0px 10px;
+    	font-size: 58px
+	}
+	.promo{
+		padding:0px 10px 0px 10px;
+		font-size:28px;
+		text-align:center;
+		color:black;
+	}
+	.seguici{
+		padding:0px 10px 0px 10px;
+		font-size:28px;
+		text-align:center;
+		color:black;
+	}
+	.social{
+		padding:0px 10px 0px 10px;
+		font-size:28px;
+		text-align:center;
+		color:black;
+	}
+	.social a{
+		text-decoration: none;
+		color:black;
+	}
+	#box6{
+		width: 100%;
+	    height: 244px;
+	    background-color: #333;
+	    position: relative;
+	    overflow-y: hidden;
+	    top: 87px;
+	}
+	.tab_social{
+		margin-top: 30px;
+		margin-right: 10px;
+		float: right;
+		color: white;
+	}
+	.logo_footer{
+		margin:20px 0px 10px 20px;
+	}
+	.condizioni{
+		top: 145px;
+	    left: 50%;
+	    margin-left: -151.96px;
+	    position: absolute;
+	    padding: 0px 10px 0px 10px;
+	    text-align: center;
+	    font-size: 12px;
+	    color: white;
+	}
+	.facebook img{
+		width:50px;
+		height:50px;
+	}
+	.instagram img{
+		width:50px;
+		height:50px;
+
+	}
+}
